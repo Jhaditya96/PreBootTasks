@@ -587,3 +587,59 @@ console.log("The cost of Electricity bill is(1unit = 1000Wh):",cost)
 });
 
 
+21.Calculate CGPA?
+A.const readline = require('readline');
+const inp = readline.createInterface({
+  input: process.stdin
+});
+const userInput = [];
+inp.on("line", (data) => {
+ userInput.push(data);
+});
+inp.on("close", () => {
+//start-here
+    let English, Hindi, Maths, Science, SocialStudy, CGPA, CGPAper ;  
+    English = 9.1;  
+    Hindi = 8.5;  
+    Maths = 9.5;  
+    Science =9.6;  
+    SocialStudy = 8.6;  
+    CGPA = (9.1+8.5+9.5+9.6+8.6)/(5.0);  
+    CGPAper = (9.5 * (CGPA));  
+    console.log( "CGPA Percentage is: ",CGPAper.toFixed(1));  
+//end-here
+});
+
+------------------
+TASK-3
+
+1.Write a loop that makes seven calls to console.log to output the following triangle:
+#
+##
+###
+####
+#####
+######
+#######
+A.<html>
+<head>
+<script type="text/javascript">
+
+  var i, j;
+  //outer loop
+  for(i=1; i <= 5; i++)
+   {
+   //inner loop
+    for(j=1; j<=i; j++)
+   {
+     document.write('*');
+    }
+     document.write('<br/>');
+   }
+
+</script>
+</head>
+<body>
+</body>
+</html>
+
